@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Multiple AIs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #000000, #1a1a3d);
+      font-family: 'Orbitron', Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .encadrement {
+      border: 3px solid #00f0ff;
+      margin: 30px auto;
+      padding: 30px;
+      max-width: 1000px;
+      border-radius: 20px;
+      box-shadow: 0 0 40px #00f0ff;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    h1, h2, h3 {
+      color: #00f0ff;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #e0e0e0;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    #tableau1 {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 15px #00f0ff;
+    }
+
+    #tableau1 th, #tableau1 td {
+      border: 1px solid #00f0ff;
+      padding: 12px;
+      color: white;
+    }
+
+    #tableau1 td a {
+      color: #00f0ff;
+      text-decoration: none;
+    }
+
+    #tableau1 td a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 80%;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #0080ff;
+      margin: 20px 0;
+    }
+
+    #bouton1 {
+      padding: 20px 40px;
+      font-size: 16px;
+      background: linear-gradient(90deg, #0040ff, #00ccff);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #00ccff;
+      transition: transform 0.2s, box-shadow 0.3s;
+      margin-top: 30px;
+    }
+
+    #bouton1:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #00ccff, #0040ff);
+      box-shadow: 0 0 30px #00ccff;
+    }
+  </style>
+</head>
+<body>
+  <div class="encadrement">
+    <h1>Explore Other Artificial Intelligences...</h1>
+    <p>Below is a curated table featuring various well-known and emerging AIs, along with their areas of expertise.</p>
+    <hr><hr>
+    <p>Click on any AI name to visit its official website.</p>
+
+    <table id="tableau1">
+      <thead>
+        <tr><th>AI</th><th>Specialty</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="https://chatgpt.com" target="_blank" title="Visit ChatGPT’s official website">ChatGPT</a></td><td>Natural language, coding</td></tr>
+        <tr><td><a href="https://www.yiaho.com" target="_blank" title="Visit Yiaho’s official website">Yiaho</a></td><td>Voice interpretation, French language</td></tr>
+        <tr><td><a href="https://mistral.ai" target="_blank" title="Visit Mistral AI">Mistral AI</a></td><td>Science, neural modeling</td></tr>
+        <tr><td><a href="https://www.deepseek.com" target="_blank" title="Visit DeepSeek">DeepSeek</a></td><td>Mathematics, statistics</td></tr>
+        <tr><td><a href="https://www.anthropic.com/index/claude" target="_blank" title="Visit Claude by Anthropic">Claude (Anthropic)</a></td><td>Ethical dialogue, reasoning</td></tr>
+        <tr><td><a href="https://deepmind.google/technologies/gemini/" target="_blank" title="Visit Gemini by Google">Gemini (Google)</a></td><td>Multimodality, research</td></tr>
+        <tr><td><a href="https://ai.meta.com/llama/" target="_blank" title="Visit LLaMA by Meta">LLaMA (Meta)</a></td><td>Open-source models, AI research</td></tr>
+        <tr><td><a href="https://x.ai" target="_blank" title="Visit Grok by xAI">Grok (xAI)</a></td><td>Humor, conversation</td></tr>
+        <tr><td><a href="https://www.perplexity.ai" target="_blank" title="Visit Perplexity AI">Perplexity AI</a></td><td>Intelligent web search</td></tr>
+        <tr><td><a href="https://huggingface.co/chat" target="_blank" title="Visit HuggingChat">HuggingChat</a></td><td>Open-source, accessibility</td></tr>
+        <tr><td><a href="https://developer.nvidia.com/nvidia-jarvis" target="_blank" title="Visit NVIDIA Jarvis">JARVIS (NVIDIA)</a></td><td>Voice and video processing</td></tr>
+        <tr><td><a href="https://www.deepmind.com/research/highlighted-research/alphafold" target="_blank" title="Visit AlphaFold">AlphaFold</a></td><td>Biology, protein folding</td></tr>
+        <tr><td><a href="https://deepmind.com/research/highlighted-research/alphazero" target="_blank" title="Visit AlphaZero">AlphaZero</a></td><td>Strategic games (chess, Go)</td></tr>
+        <tr><td><a href="https://openai.com/dall-e" target="_blank" title="Visit DALL·E">DALL·E</a></td><td>Text-to-image generation</td></tr>
+        <tr><td><a href="https://www.midjourney.com" target="_blank" title="Visit Midjourney">Midjourney</a></td><td>AI-based artistic illustration</td></tr>
+        <tr><td><a href="https://stability.ai/stable-diffusion" target="_blank" title="Visit Stable Diffusion">Stable Diffusion</a></td><td>Open-source image generation</td></tr>
+        <tr><td><a href="https://replika.com" target="_blank" title="Visit Replika">Replika</a></td><td>Empathetic virtual companion</td></tr>
+        <tr><td><a href="https://www.apple.com/siri/" target="_blank" title="Visit Siri">Siri</a></td><td>Apple voice assistant</td></tr>
+        <tr><td><a href="https://www.amazon.fr/alexa" target="_blank" title="Visit Alexa">Alexa</a></td><td>Smart home & voice search</td></tr>
+        <tr><td><a href="https://cohere.com" target="_blank" title="Visit Cohere">Cohere</a></td><td>Enterprise AI, NLP</td></tr>
+      </tbody>
+    </table>
+
+    <p>This table provides a broad overview of today’s diverse AI landscape.</p>
+    <hr>
+
+    <img src="Tableaux.png" alt="An exceptionally intelligent AI">
+    <p>Image created by ChatGPT.</p>
+
+    <hr><hr>
+    <p>Beyond technological advancement, we aim to promote thoughtful use of AI tools by understanding their strengths and limitations.</p>
+
+    <hr>
+    <button id="bouton1" onclick="location.href='Website.E.html'">Back to Main Menu</button> 
+  </div>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Un site pédagogique sur les intelligences artificielles." />
+  <title>Les Intelligences Artificielles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(120deg, #000000, #0f0f3d);
+      font-family: 'Orbitron', Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      color: #e0e0e0;
+    }
+
+    .encadrement {
+      position: relative;
+      border: 3px solid #00f0ff;
+      margin: 30px;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 40px #00f0ff;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00ccff;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+
+    .drapeau-francais {
+      width: 90px;
+      height: 60px;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00ccff;
+      display: flex;
+      border: 1px solid #00ccff;
+      overflow: hidden;
+    }
+
+    .drapeau-francais > div {
+      flex: 1;
+      height: 100%;
+    }
+
+    .bleu { background-color: #0055a4; }
+    .blanc { background-color: #ffffff; }
+    .rouge { background-color: #ef4135; }
+
+    h1, h2, h3 {
+      color: #00f0ff;
+      margin-top: 0;
+    }
+
+    p, a {
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    img:not(.logo) {
+      max-width: 80%;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #0080ff;
+      margin-top: 15px;
+    }
+
+    button {
+      padding: 20px 40px;
+      font-size: 16px;
+      background: linear-gradient(90deg, #0040ff, #00ccff);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+      box-shadow: 0 0 15px #00ccff;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #00ccff;
+      background: linear-gradient(90deg, #00ccff, #0040ff);
+    }
+
+    .bouton-ia {
+      opacity: 0.5;
+      background: rgba(0, 60, 80, 0.4);
+      color: #ccc;
+      border: 1px solid #00ccff;
+    }
+
+    .bouton-ia:hover {
+      opacity: 0.8;
+      background: rgba(0, 80, 110, 0.6);
+    }
+
+    #tableau1 {
+      width: 80%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 15px #00f0ff;
+    }
+
+    #tableau1 th, #tableau1 td {
+      border: 1px solid #00f0ff;
+      padding: 12px;
+      color: white;
+    }
+
+    a {
+      color: #00ccff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+      #tableau1 {
+        width: 100%;
+        font-size: 14px;
+      }
+
+      button {
+        width: 90%;
+        padding: 15px;
+        font-size: 15px;
+      }
+
+      .logo, .drapeau-francais {
+        width: 70px;
+        top: 20px;
+      }
+
+      .drapeau-francais {
+        height: 45px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="encadrement">
+    <div class="drapeau-francais" aria-label="Drapeau français" role="img">
+      <div class="bleu"></div>
+      <div class="blanc"></div>
+      <div class="rouge"></div>
+    </div>
+
+    <img src="Menu.png" alt="Logo Intelligence Artificielle" class="logo" />
+
+    <h1>Bienvenue sur notre page web !</h1>
+    <p>Ceci est notre tout premier site HTML et CSS. Nous sommes heureux de pouvoir vous le partager !</p>
+    <hr />
+
+    <h2>Notre thème : l'intelligence artificielle</h2>
+    <p>Dans un monde en constante évolution, le progrès le plus impressionnant de ces dernières années est très certainement l'avancée de l'intelligence artificielle...</p>
+    <p>À travers ce site, nous vous proposons une multitude d'informations et de ressources pour découvrir les intelligences artificielles d'hier, d'aujourd'hui, et très certainement de demain. Bonne lecture !</p>
+    <hr />
+
+    <img src="Website.png" alt="Illustration futuriste générée par une intelligence artificielle" />
+    <p>Image générée avec l'aide de ChatGPT.</p>
+    <hr />
+
+    <p>Tableau représentatif des spécialités de chaque IA :</p>
+    <table id="tableau1" aria-label="Tableau des spécialités des intelligences artificielles">
+      <thead>
+        <tr>
+          <th>IA</th>
+          <th>Spécialité</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">ChatGPT</a></td>
+          <td>Langage naturel, programmation</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.yiaho.com" target="_blank" rel="noopener noreferrer">Yiaho</a></td>
+          <td>Interprétation vocale, français</td>
+        </tr>
+        <tr>
+          <td><a href="https://mistral.ai" target="_blank" rel="noopener noreferrer">Mistral AI</a></td>
+          <td>Sciences, modélisation neuronale</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.deepseek.com" target="_blank" rel="noopener noreferrer">DeepSeek</a></td>
+          <td>Mathématiques, statistiques</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Ces estimations sont issues de plusieurs recherches.</p>
+    <hr />
+
+    <button aria-label="Aller à la page Origines" onclick="location.href='Origines.html'">D'où venons-nous ?</button>
+    <button aria-label="Aller à la page Tableaux" onclick="location.href='Tableaux.html'">D'autres IAs...</button>
+    <button aria-label="Retour au menu des langues" onclick="location.href='Menu.html'">Retour au menu des langues</button>
+    <hr />
+
+    <section aria-labelledby="articles-title">
+      <h2 id="articles-title">Quelques articles !</h2>
+
+      <article>
+        <h3>Copilot : l’assistant intelligent au service des développeurs.</h3>
+        <p>
+          Copilot est un outil d’intelligence artificielle développé par GitHub en collaboration avec OpenAI.
+          Il agit comme un assistant de programmation capable de suggérer du code en temps réel, directement dans l’environnement de développement intégré (IDE) de l’utilisateur.
+        </p>
+        <p>
+          Grâce à l’apprentissage automatique sur d’énormes volumes de code open source, Copilot peut proposer des solutions adaptées à une grande variété de langages et de frameworks, du JavaScript au Python en passant par C#, HTML et bien d'autres.
+        </p>
+        <p>
+          Bien qu’il soit performant, Copilot ne remplace pas l’expertise humaine : il reste un outil d’aide à la décision. Les développeurs doivent toujours valider et tester le code généré.
+        </p>
+      </article>
+
+      <article>
+        <h3>ChatGPT : l’intelligence artificielle au service de la conversation.</h3>
+        <p>
+          ChatGPT est un modèle de traitement du langage naturel développé par OpenAI, conçu pour générer des réponses cohérentes et pertinentes à partir de simples requêtes textuelles.
+        </p>
+        <p>
+          Reposant sur l’architecture GPT (Generative Pre-trained Transformer), il a été entraîné sur une vaste quantité de textes issus d’Internet. Il peut ainsi dialoguer de manière fluide sur une grande variété de sujets.
+        </p>
+        <p>
+          Il se distingue par sa capacité à s’adapter au ton et au style de l’utilisateur, offrant une interaction personnalisée. Toutefois, il peut parfois produire des erreurs ou des réponses imprécises.
+        </p>
+        <p>
+          ChatGPT s’impose comme un compagnon numérique innovant pour la communication, l’apprentissage et la productivité.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      © 2025 - Site réalisé dans le cadre d’un projet pédagogique sur l’intelligence artificielle. Illustrations générées avec l’aide de ChatGPT.
+    </footer>
+  </div>
+</body>
+</html>

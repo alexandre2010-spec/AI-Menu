@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Find Your Ideal AI Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover and explore the most advanced AI tools by category: science, language, creativity." />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ---------- 1. Base ---------- */
+    :root {
+      --c-bg‑dark: #0f1a3a;
+      --c‑blue‑neon: #00ccff;
+      --c‑blue‑deep: #0040ff;
+      --c‑text‑light: #e0e0e0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', Arial, sans-serif;
+      color: #ffffff;
+      text-align: center;
+      background: linear-gradient(135deg, #000010, var(--c-bg‑dark));
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* ---------- 2. Frame ---------- */
+    .encadrement {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px;
+      border: 3px solid var(--c‑blue‑neon);
+      border-radius: 20px;
+      background: rgba(0, 0, 30, 0.85);
+      box-shadow: 0 0 50px var(--c‑blue‑neon);
+    }
+
+    /* ---------- 3. Headings ---------- */
+    h1, h2, h3 {
+      color: #00eaff;
+      text-shadow: 0 0 10px var(--c‑blue‑neon), 0 0 22px var(--c‑blue‑neon);
+      margin-bottom: 20px;
+    }
+
+    h1 { animation: neonFlash 3s infinite ease-in-out; }
+
+    @keyframes neonFlash {
+      0%, 100% { text-shadow: 0 0 10px var(--c‑blue‑neon), 0 0 22px var(--c‑blue‑neon); }
+      50%      { text-shadow: 0 0 20px #00eaff, 0 0 35px #00eaff; }
+    }
+
+    /* ---------- 4. Text & HR ---------- */
+    p { color: var(--c‑text‑light); line-height: 1.6; margin-bottom: 20px; }
+
+    hr.double {
+      border: none;
+      height: 4px;
+      width: 80%;
+      margin: 30px auto;
+      background: linear-gradient(to right, var(--c‑blue‑deep), var(--c‑blue‑neon), var(--c‑blue‑deep));
+      box-shadow: 0 0 10px var(--c‑blue‑neon);
+    }
+
+    /* ---------- 5. Buttons ---------- */
+    .button {
+      display: inline-block;
+      margin: 15px;
+      padding: 18px 60px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 12px;
+      background: linear-gradient(90deg, var(--c‑blue‑deep), var(--c‑blue‑neon));
+      box-shadow: 0 0 25px var(--c‑blue‑neon);
+      transition: transform .3s, box-shadow .4s, background .4s;
+      will-change: transform;
+      border: none;          /* pour <button> également */
+      cursor: pointer;
+    }
+
+    .button:hover {
+      transform: scale(1.08);
+      background: linear-gradient(90deg, var(--c‑blue‑neon), var(--c‑blue‑deep));
+      box-shadow: 0 0 35px var(--c‑blue‑neon);
+    }
+
+    /* ---------- 6. Tables ---------- */
+    table {
+      width: 95%;
+      margin: 25px auto;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 20px var(--c‑blue‑neon);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    thead { background: rgba(0, 0, 50, .6); }
+
+    th, td {
+      border: 1px solid var(--c‑blue‑neon);
+      padding: 12px;
+    }
+
+    td a {
+      color: var(--c‑blue‑neon);
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    td a:hover { color: #66ffff; text-decoration: underline; }
+
+    /* ---------- 7. Images ---------- */
+    img {
+      max-width: 85%;
+      border-radius: 15px;
+      box-shadow: 0 0 25px #0080ff;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="encadrement">
+    <h1>Find Your Ideal AI Assistant</h1>
+    <p>Explore categorized AI tools and platforms designed for science, language, creativity, and more.</p>
+
+    <hr class="double" />
+    <p>Click on any AI name to visit its official website and explore its features.</p>
+    <hr class="double" />
+
+    <!-- ---------- Science ---------- -->
+    <h2>Science AIs</h2>
+    <table aria-labelledby="science-caption">
+      <caption id="science-caption" class="visually-hidden">Science‑related AI tools</caption>
+      <thead>
+        <tr><th scope="col">AI</th><th scope="col">Specialty</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="https://mistral.ai" target="_blank" rel="noopener">Mistral AI</a></td><td>Science, neural modeling</td></tr>
+        <tr><td><a href="https://www.deepseek.com" target="_blank" rel="noopener">DeepSeek</a></td><td>Mathematics, statistics</td></tr>
+        <tr><td><a href="https://deepmind.google/technologies/gemini/" target="_blank" rel="noopener">Gemini (Google)</a></td><td>Multimodality, research</td></tr>
+        <tr><td><a href="https://www.deepmind.com/research/highlighted-research/alphafold" target="_blank" rel="noopener">AlphaFold</a></td><td>Biology, protein folding</td></tr>
+        <tr><td><a href="https://deepmind.com/research/highlighted-research/alphazero" target="_blank" rel="noopener">AlphaZero</a></td><td>Strategic games (chess, Go)</td></tr>
+        <tr><td><a href="https://cohere.com" target="_blank" rel="noopener">Cohere</a></td><td>Enterprise AI, NLP</td></tr>
+        <tr><td><a href="#" target="_blank" rel="noopener">AnthroBot</a></td><td>Human‑behaviour modeling</td></tr>
+        <tr><td><a href="#" target="_blank" rel="noopener">Elicit</a></td><td>Research automation</td></tr>
+        <tr><td><a href="#" target="_blank" rel="noopener">SciSpace</a></td><td>Scientific paper explanation</td></tr>
+        <tr><td><a href="#" target="_blank" rel="noopener">ExplainPaper</a></td><td>Scientific text simplification</td></tr>
+      </tbody>
+    </table>
+
+    <hr class="double" />
+
+    <!-- ---------- Language ---------- -->
+    <h2>Language AIs</h2>
+    <table aria-labelledby="language-caption">
+      <caption id="language-caption" class="visually-hidden">Language and dialogue‑based AIs</caption>
+      <thead>
+        <tr><th scope="col">AI</th><th scope="col">Specialty</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a></td><td>Natural language, coding</td></tr>
+        <tr><td><a href="https://www.yiaho.com" target="_blank" rel="noopener">Yiaho</a></td><td>Voice interpretation, French</td></tr>
+        <tr><td><a href="https://www.anthropic.com/index/claude" target="_blank" rel="noopener">Claude</a></td><td>Ethical dialogue, reasoning</td></tr>
+        <tr><td><a href="https://ai.meta.com/llama/" target="_blank" rel="noopener">LLaMA</a></td><td>Open‑source models</td></tr>
+        <tr><td><a href="https://x.ai" target="_blank" rel="noopener">Grok</a></td><td>Humour, conversation</td></tr>
+        <tr><td><a href="https://www.perplexity.ai" target="_blank" rel="noopener">Perplexity</a></td><td>Web search integration</td></tr>
+        <tr><td><a href="https://huggingface.co/chat" target="_blank" rel="noopener">HuggingChat</a></td><td>Open‑source, accessible</td></tr>
+        <tr><td><a href="https://developer.nvidia.com/nvidia-jarvis" target="_blank" rel="noopener">Jarvis (NVIDIA)</a></td><td>Voice/video AI</td></tr>
+        <tr><td><a href="https://replika.com" target="_blank" rel="noopener">Replika</a></td><td>Empathetic companion</td></tr>
+        <tr><td><a href="https://www.apple.com/siri/" target="_blank" rel="noopener">Siri</a></td><td>Apple assistant</td></tr>
+        <tr><td><a href="https://www.amazon.com/alexa" target="_blank" rel="noopener">Alexa</a></td><td>Smart‑home assistant</td></tr>
+      </tbody>
+    </table>
+
+    <hr class="double" />
+
+    <!-- ---------- Creative ---------- -->
+    <h2>Creative / Generative AIs</h2>
+    <table aria-labelledby="creative-caption">
+      <caption id="creative-caption" class="visually-hidden">Creative and generative AI tools</caption>
+      <thead>
+        <tr><th scope="col">AI</th><th scope="col">Specialty</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="https://openai.com/dall-e" target="_blank" rel="noopener">DALL·E</a></td><td>Text‑to‑image generation</td></tr>
+        <tr><td><a href="https://www.midjourney.com" target="_blank" rel="noopener">Midjourney</a></td><td>Artistic illustration</td></tr>
+        <tr><td><a href="https://stability.ai/stable-diffusion" target="_blank" rel="noopener">Stable Diffusion</a></td><td>Image generation</td></tr>
+        <tr><td><a href="https://leonardo.ai" target="_blank" rel="noopener">Leonardo AI</a></td><td>Game assets</td></tr>
+        <tr><td><a href="#" target="_blank" rel="noopener">Runway ML</a></td><td>AI video editing</td></tr>
+        <tr><td><a href="#" target="_blank" rel="noopener">Fireflies.ai</a></td><td>Meeting assistant</td></tr>
+        <tr><td><a href="#" target="_blank" rel="noopener">MagickPen</a></td><td>Paraphrasing &amp; writing</td></tr>
+        <tr><td><a href="#" target="_blank" rel="noopener">Jasper AI</a></td><td>SEO copywriting</td></tr>
+        <tr><td><a href="#" target="_blank" rel="noopener">Suno AI</a></td><td>Music generation</td></tr>
+      </tbody>
+    </table>
+
+    <p>More detailed information and project history are available in the full site content.</p>
+    <hr class="double" />
+
+    <!-- ---------- Back Button ---------- -->
+    <button class="button" onclick="location.href='Menu.html'" aria-label="Go back to main menu">← Back to Language Menu</button>
+  </div>
+
+  <!-- ---------- Visually Hidden Helper Class ---------- -->
+  <style>
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px; width: 1px;
+      overflow: hidden; clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+    }
+  </style>
+</body>
+</html>

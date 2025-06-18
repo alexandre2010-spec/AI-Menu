@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover AI options through a futuristic and interactive interface, available in English and French." />
+  <title>AI Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #000010, #0f1a3a);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      overflow-x: hidden;
+      color: white;
+      position: relative;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .encadrement {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      border: 3px solid #00f0ff;
+      border-radius: 20px;
+      background: rgba(0, 0, 30, 0.85);
+      box-shadow: 0 0 50px #00f0ff;
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    h1, h2 {
+      color: #00eaff;
+      text-shadow: 0 0 10px #00f0ff, 0 0 22px #00f0ff;
+    }
+
+    h1 {
+      animation: neonFlash 3s infinite ease-in-out;
+    }
+
+    @keyframes neonFlash {
+      0%, 100% {
+        text-shadow: 0 0 10px #00f0ff, 0 0 22px #00f0ff;
+      }
+      50% {
+        text-shadow: 0 0 20px #00eaff, 0 0 35px #00eaff;
+      }
+    }
+
+    p {
+      color: #e0e0e0;
+      font-size: 1.1em;
+    }
+
+    .credit {
+      font-style: italic;
+      color: #cccccc;
+      font-size: 0.95em;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 85%;
+      border-radius: 20px;
+      box-shadow: 0 0 25px #0080ff;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 15px;
+      padding: 18px 60px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #0040ff, #00ccff);
+      box-shadow: 0 0 25px #00ccff;
+      transition: transform 0.3s, box-shadow 0.4s, background 0.4s;
+      will-change: transform;
+    }
+
+    .button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 35px #00ccff;
+      background: linear-gradient(90deg, #00ccff, #0040ff);
+    }
+
+    hr.double {
+      border: none;
+      height: 4px;
+      background: linear-gradient(to right, #0040ff, #00ccff, #0040ff);
+      margin: 30px auto;
+      width: 80%;
+      box-shadow: 0 0 10px #00ccff;
+    }
+
+    .techno-corner {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border: 3px solid #00ccff;
+      z-index: 0;
+      animation: cornerPulse 4s infinite alternate;
+    }
+
+    @keyframes cornerPulse {
+      0% { box-shadow: 0 0 5px #00ccff; }
+      100% { box-shadow: 0 0 20px #00ccff; }
+    }
+
+    .top-left {
+      top: 10px;
+      left: 10px;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    .top-right {
+      top: 10px;
+      right: 10px;
+      border-left: none;
+      border-bottom: none;
+    }
+
+    .bottom-left {
+      bottom: 10px;
+      left: 10px;
+      border-right: none;
+      border-top: none;
+    }
+
+    .bottom-right {
+      bottom: 10px;
+      right: 10px;
+      border-left: none;
+      border-top: none;
+    }
+
+    .circuit-line {
+      position: fixed;
+      width: 3px;
+      height: 100vh;
+      top: 0;
+      background: #00ccff;
+      box-shadow: 0 0 15px #00ccff;
+      animation: pulse 2s infinite alternate;
+      z-index: 1;
+      will-change: transform, opacity;
+    }
+
+    .circuit-line.line1 {
+      left: 30px;
+    }
+
+    .circuit-line.line2 {
+      right: 30px;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.3; transform: scaleY(1); }
+      100% { opacity: 1; transform: scaleY(1.2); }
+    }
+
+    a {
+      color: #00ccff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative full-height lines -->
+  <div class="circuit-line line1"></div>
+  <div class="circuit-line line2"></div>
+
+  <!-- Content -->
+  <div class="encadrement">
+    <img src="Menu.png" alt="Illustration of AI menu interface" role="presentation" />
+    <p class="credit">A creation by Alexandre G. – design, direction, and coordination.</p>
+
+    <hr class="double" />
+
+    <h1>Artificial Intelligence Menu</h1>
+    <a href="Straight.html" class="button" aria-label="Go directly to your preferred AI">Choose your AI directly!</a>
+    <p>Click the button below to go straight to your preferred AI.</p>
+
+    <hr class="double" />
+
+    <h2>Select your language to enter the website:</h2>
+    <a href="Website.html" class="button" aria-label="Entrer sur le site en français">Français</a>
+    <a href="Website.E.html" class="button" aria-label="Enter the website in English">English</a>
+
+    <hr class="double" />
+
+    <p>Explore various AI types and discover their unique abilities on our interactive website.</p>
+<p>-----</p>
+<footer>
+      © 2025 - Website realised for a pedagogical project, AI presentation.
+    </footer>
+
+    <!-- Decorative corners -->
+    <div class="techno-corner top-left"></div>
+    <div class="techno-corner top-right"></div>
+    <div class="techno-corner bottom-left"></div>
+    <div class="techno-corner bottom-right"></div>
+  </div>
+
+</body>
+</html>
